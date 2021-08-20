@@ -15,5 +15,5 @@ interface ShortcutInterface
     /**
      * @return string[]|\Zrone\Pipline\Contract\PluginInterface[]
      */
-    public function getPlugins(array $params): array;
+    public function getPlugins(): array;
 }
