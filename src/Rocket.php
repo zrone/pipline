@@ -31,7 +31,7 @@ class Rocket implements JsonSerializableInterface, SerializableInterface, ArrayA
     private $params = [];
 
     /**
-     * @var null|\Zrone\Pipline\Collection
+     * @var null|array|\Zrone\Pipline\Collection
      */
     private $payload;
 
@@ -78,12 +78,12 @@ class Rocket implements JsonSerializableInterface, SerializableInterface, ArrayA
         return $this;
     }
 
-    public function getPayload(): ?Collection
+    public function getPayload()
     {
         return $this->payload;
     }
 
-    public function setPayload(?Collection $payload): Rocket
+    public function setPayload($payload): Rocket
     {
         $this->payload = $payload;
 
